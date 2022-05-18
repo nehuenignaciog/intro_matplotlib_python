@@ -34,4 +34,20 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+
+    fig = plt.figure()
+    fig.suptitle('Población histórica mundial', fontsize=16)
+    ax1 = fig.add_subplot(1, 2, 1)  # 1 fila, 2 columnas, axes nº1
+    ax2 = fig.add_subplot(1, 2, 2)  # 1 fila, 2 columnas, axes nº2
+
+
+    ax1.plot(x, y, c='darkgreen')
+    ax1.legend()
+    ax1.grid()
+
+    ax2.scatter(x, y, label ="Scatter",c='green')
+    ax2.legend()
+    ax2.grid()
+    plt.show()
+
     print("terminamos")
