@@ -52,8 +52,8 @@ if __name__ == '__main__':
     fig.suptitle('Ejercicio 2', fontsize=18)
     
     #Grafico
-    ax.plot(x, y1, label='Grafico 1', c='#395B64' )
-    ax.plot(x, y2, label='Grafico 2', c='#11468F' )
+    ax.plot(x, y1, label='y1 = x**2', c='#395B64' )
+    ax.plot(x, y2, label='y2 = x**3', c='#11468F' )
     
     #Personalizacion
     ax.set_title("Line plot", fontsize=14)

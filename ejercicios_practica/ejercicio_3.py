@@ -44,7 +44,7 @@ if __name__ == '__main__':
     ax.scatter(x, y, label ="y = tanh(x)",c='#1A374D', marker='.')
 
     #Personalizacion
-    ax.set_title("Scatter Plot", fontsize=14)
+    ax.set_title("Tangente hiperbólica", fontsize=14)
     ax.set_ylabel("Eje Y")
     ax.set_xlabel("Eje X")
     ax.set_facecolor('#B1D0E0')
