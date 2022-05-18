@@ -8,7 +8,6 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios de matplotlib
-
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -54,56 +53,33 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
-
     fig = plt.figure()
-    fig.suptitle('Ejercicio 4', fontsize=18)
-    ax1 = fig.add_subplot(2,2,1)  
-    ax2 = fig.add_subplot(2,2,2) 
-    ax3 = fig.add_subplot(2,2,3) 
-    ax4 = fig.add_subplot(2,2,4) 
-    
-    #Grafico1
-    ax1.plot(x, y1, label ="y1 = x^2",c='#99c1de')
-    ax1.set_title("X al cuadrado", fontsize=12)
-    ax1.set_ylabel("Eje Y")
-    ax1.set_xlabel("Eje X")
-    ax1.set_facecolor('#f0efeb')
+
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
+    ax1.plot(x, y1, color='b', label='y=x^2')
+    ax1.set_facecolor('whitesmoke')
+    ax1.set_title("Función x al cuadrado")
     ax1.legend()
-    ax1.grid()
 
-    #Grafico2
-     
-    ax2.plot(x, y2, label ="y2 = x^3",c='#3A6351')
-    ax2.set_title("X al cubo", fontsize=12)
-    ax2.set_ylabel("Eje Y")
-    ax2.set_xlabel("Eje X")
-    ax2.set_facecolor('#f0efeb')
+    ax2.plot(x, y2, color='m', label='y=x^3')
+    ax2.set_facecolor('whitesmoke')
+    ax2.set_title("Función x al cubo")
     ax2.legend()
-    ax2.grid()
-    
 
-    #Grafico3
-     
-    ax3.plot(x, y3, label ="y3 = x^4",c='#046582')
-    ax3.set_title("X a la cuarta", fontsize=12)
-    ax3.set_ylabel("Eje Y")
-    ax3.set_xlabel("Eje X")
-    ax3.set_facecolor('#f0efeb')
+    ax3.plot(x, y3, color='r', label='y=x^4')
+    ax3.set_facecolor('whitesmoke')
+    ax3.set_title("Función x a la cuarta")
     ax3.legend()
-    ax3.grid()
-    
-    
-    
-    #Grafico4
-     
-    ax4.scatter(x, y4, label ="y4 = raiz_cuadrada(X)",c='#C37B89', marker='.')
-    ax4.set_title("Raiz cuadrada de X", fontsize=12)
-    ax4.set_ylabel("Eje Y")
-    ax4.set_xlabel("Eje X")
-    ax4.set_facecolor('#f0efeb')
-    ax4.legend()
-    ax4.grid()
 
-    plt.tight_layout()
+    ax4.plot(x, y4, color='g', label='y=sqrt(x)')
+    ax4.set_facecolor('whitesmoke')
+    ax4.set_title("Función Raiz Cuadrada de x")
+    ax4.legend()
+
     plt.show()
+
     print("terminamos")
