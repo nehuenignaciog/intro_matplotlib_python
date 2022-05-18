@@ -21,7 +21,7 @@ if __name__ == '__main__':
     # Se desea graficar los valores de "x" e "y" en un gráfico de línea
     # A continuación los datos ya disponibles de "x" e "y" para que utilice:
     x = list(range(-10, 11, 1))
-    print (x)
+    
     # Bucle que completa y calcula todos los valores de "y"
     y = []
     for i in x:
@@ -31,16 +31,20 @@ if __name__ == '__main__':
     # Graficar el "line plot" de "y" en función de "x"
 
     fig = plt.figure()
-    fig.suptitle('Ejercicio Line Plot', fontsize=16)
     ax = fig.add_subplot()
 
     # Alumno: Colocar la leyenda y el label con el nombre de la función 
     # Darle color a la línea a su elección
     # Crear acá su gráfico
-
-    ax.plot(x, y, label='eje x', c='red' )
+    
+    ax.plot(x, y, c='#112B3C',label='y = x**2')
     ax.legend()
+    ax.set_title("Ejercicio 1")
+    ax.set_ylabel("Eje Y ")
+    ax.set_xlabel("Eje X")
+    ax.set_facecolor('#E8F9FD')
     ax.grid()
+    
+ 
     plt.show()
-    print("Line Plot")
     print("terminamos")

@@ -46,16 +46,25 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
-    fig = plt.figure()
-    fig.suptitle('Ejercicio Line Plot', fontsize=16)
-    ax = fig.add_subplot()
-
-    ax.plot(x, y1, label='Grafico 1', c='darkblue' )
-    ax.plot(x, y2, label='Grafico 2', c='blue' )
     
+    fig = plt.figure()
+    ax = fig.add_subplot()
+    fig.suptitle('Ejercicio 2', fontsize=18)
+    
+    #Grafico
+    ax.plot(x, y1, label='Grafico 1', c='#395B64' )
+    ax.plot(x, y2, label='Grafico 2', c='#11468F' )
+    
+    #Personalizacion
+    ax.set_title("Line plot", fontsize=14)
+    ax.set_ylabel("Eje Y")
+    ax.set_xlabel("Eje X")
+    ax.set_facecolor('#F5F2E7')
     ax.legend()
     ax.grid()
+
+    #Muestro
+    
     plt.show()
-    print("Line Plot")
-    print("terminamos")
+    
     print("terminamos")

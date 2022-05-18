@@ -8,6 +8,7 @@
 # que aparecen en verde con el hashtag "#"
 
 # Ejercicios de matplotlib
+
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -54,4 +55,59 @@ if __name__ == '__main__':
 
     # Crear acá su gráfico
 
+    fig = plt.figure()
+    fig.suptitle('Ejercicio 4', fontsize=18)
+    ax1 = fig.add_subplot(2,2,1)  
+    ax2 = fig.add_subplot(2,2,2) 
+    ax3 = fig.add_subplot(2,2,3) 
+    ax4 = fig.add_subplot(2,2,4) 
+    
+    #Grafico1
+    ax1.plot(x, y1, label ="y = x**2",c='#99c1de')
+    ax1.set_title("Grafico 1", fontsize=12)
+    ax1.set_ylabel("Eje Y")
+    ax1.set_xlabel("Eje X")
+    ax1.set_facecolor('#f0efeb')
+
+    ax1.legend()
+    ax1.grid()
+
+    #Grafico2
+     
+    ax2.plot(x, y2, label ="y = x**3",c='#3A6351')
+    ax2.set_title("Grafico 2", fontsize=12)
+    ax2.set_ylabel("Eje Y")
+    ax2.set_xlabel("Eje X")
+    ax2.set_facecolor('#f0efeb')
+ 
+    ax2.legend()
+    ax2.grid()
+    
+
+    #Grafico3
+     
+    ax3.plot(x, y3, label ="y = np.sqrt(x)",c='#046582')
+    ax3.set_title("Grafico 3", fontsize=12)
+    ax3.set_ylabel("Eje Y")
+    ax3.set_xlabel("Eje X")
+    ax3.set_facecolor('#f0efeb')
+
+    ax3.legend()
+    ax3.grid()
+    
+    
+    
+    #Grafico4
+     
+    ax4.scatter(x, y4, label ="y = x**4",c='#C37B89', marker='.')
+    ax4.set_title("Grafico 4", fontsize=12)
+    ax4.set_ylabel("Eje Y")
+    ax4.set_xlabel("Eje X")
+    ax4.set_facecolor('#f0efeb')
+
+    ax4.legend()
+    ax4.grid()
+
+    plt.tight_layout()
+    plt.show()
     print("terminamos")

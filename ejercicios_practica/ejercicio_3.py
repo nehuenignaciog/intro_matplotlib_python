@@ -36,18 +36,23 @@ if __name__ == '__main__':
 
 
     fig = plt.figure()
-    fig.suptitle('Población histórica mundial', fontsize=16)
-    ax1 = fig.add_subplot(1, 2, 1)  # 1 fila, 2 columnas, axes nº1
-    ax2 = fig.add_subplot(1, 2, 2)  # 1 fila, 2 columnas, axes nº2
+    ax = fig.add_subplot()
+    fig.suptitle('Ejercicio 3', fontsize=18)
+    ax = fig.add_subplot()  
+    
+    #Grafico
+    ax.scatter(x, y, label ="y = tanh(x)",c='#1A374D', marker='.')
 
-
-    ax1.plot(x, y, c='darkgreen')
-    ax1.legend()
-    ax1.grid()
-
-    ax2.scatter(x, y, label ="Scatter",c='green')
-    ax2.legend()
-    ax2.grid()
+    #Personalizacion
+    ax.set_title("Scatter Plot", fontsize=14)
+    ax.set_ylabel("Eje Y")
+    ax.set_xlabel("Eje X")
+    ax.set_facecolor('#B1D0E0')
+    ax.legend()
+    ax.grid()
+   
+    #Muestro
+    
     plt.show()
 
     print("terminamos")
