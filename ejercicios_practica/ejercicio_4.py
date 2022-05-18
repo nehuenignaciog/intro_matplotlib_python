@@ -68,7 +68,6 @@ if __name__ == '__main__':
     ax1.set_ylabel("Eje Y")
     ax1.set_xlabel("Eje X")
     ax1.set_facecolor('#f0efeb')
-
     ax1.legend()
     ax1.grid()
 
@@ -79,7 +78,6 @@ if __name__ == '__main__':
     ax2.set_ylabel("Eje Y")
     ax2.set_xlabel("Eje X")
     ax2.set_facecolor('#f0efeb')
- 
     ax2.legend()
     ax2.grid()
     
@@ -91,7 +89,6 @@ if __name__ == '__main__':
     ax3.set_ylabel("Eje Y")
     ax3.set_xlabel("Eje X")
     ax3.set_facecolor('#f0efeb')
-
     ax3.legend()
     ax3.grid()
     
@@ -104,7 +101,6 @@ if __name__ == '__main__':
     ax4.set_ylabel("Eje Y")
     ax4.set_xlabel("Eje X")
     ax4.set_facecolor('#f0efeb')
-
     ax4.legend()
     ax4.grid()
 
